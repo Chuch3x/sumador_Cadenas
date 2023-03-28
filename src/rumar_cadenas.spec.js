@@ -22,4 +22,7 @@ describe("Sumar", () => {
   it("deberia devolver sumar de la cadena separada por guion o coma", () => {
     expect(sumar_cadenas("1,2,3-4-5")).toEqual(15);
   });
+  it("deberia devolver suma la cadena separada por guion, coma o un delimitardor especial ", () => {
+    expect(sumar_cadenas("//[;] 6,3-2;1")).toEqual(12);
+  });
 });
