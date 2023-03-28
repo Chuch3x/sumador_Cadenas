@@ -1,8 +1,8 @@
 function sumar_cadenas(cadena) {
   let suma = 0;
   for(let i =0;i<cadena.length;i++){
-    if(cadena[i]==","){
-        suma+=0;
+    if(cadena[i]=="," || cadena[i]=="-"){
+        suma += 0;
     }
     else{
         suma +=+cadena[i];
