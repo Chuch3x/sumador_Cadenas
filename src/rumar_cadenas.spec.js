@@ -16,7 +16,7 @@ describe("Sumar", () => {
   it("deberia devolver 3a la suma de numeros separados por guion", () => {
     expect(sumar_cadenas("1-2")).toEqual(3);
   });
-  it("deberia devolver sumar mas de 2 valores por guion", () => {
+  it("deberia devolver la suma de la cadena separada con -", () => {
     expect(sumar_cadenas("1-2-3-4-5")).toEqual(15);
   });
 });
